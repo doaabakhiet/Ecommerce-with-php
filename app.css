@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700;800&family=Open+Sans:wght@300&display=swap");
+* {
+  font-family: "Baloo Thambi 2", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+
+.item .card img {
+  transition: transform 0.5s ease;
+}
+
+.item .card img:hover {
+  transform: scale(1.1);
+}
+
+.filter nav {
+  display: block;
+  width: 100%;
+}
+
+#gallery {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.filter nav > ul > li {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.filter nav > ul > li > a {
+  text-transform: uppercase;
+  padding: 4px 10px;
+  margin-right: 2px;
+  margin-left: 2px;
+  text-decoration: none;
+  color: #27A4DD;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 25px;
+  border: 1px solid #27A4DD;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.filter nav > ul > li > a:hover, .current a {
+  color: #fff !important;
+  background-color: #27A4DD;
+}
+
+#products > ul > li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 23%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  /*Paddingstayswithinthewidth*/
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0.7;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+#products > ul > li:hover {
+  opacity: 1;
+}
+
+a img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 10px;
+  display: none;
+  box-sizing: border-box;
+}
+
+.gallery > img {
+  max-height: 100%;
+  width: auto;
+}
+
+.close i {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.bar {
+  display: block;
+  position: absolute;
+  top: 13px;
+  float: left;
+  width: 30px;
+  border-bottom: 4px solid #fff;
+  transform: rotate(45deg);
+}
+
+.bar:first-child {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  #products > ul > li {
+    width: 48%;
+  }
+}
+@media (max-width: 568px) {
+  #products > ul > li {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
